@@ -14,7 +14,12 @@ body, .intro, .wip, .description, .footer{
     color: white;
 }
 button{
-    color: black;
+    background-color: hsl( 0 0% 100% / 0.02);
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    color: var(--primary-color);
 }
 .content{
     margin-top: 4em;
@@ -202,5 +207,8 @@ footer .social-icons{
     }
     .wip-description{
         width: 100%;
+    }
+    .poemOTWeek{
+        width: 80%;
     }
 }
