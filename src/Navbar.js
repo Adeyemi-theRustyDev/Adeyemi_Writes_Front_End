@@ -20,8 +20,8 @@ const Navbar = () => {
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/library">Library</a></li>
-                        <li><a href="/library">Prompts</a></li>
                         <li><a href="/interactivity">Interactivity</a></li>
+                        <li><a href="/create">Create</a></li>
                         <li><a href="#"><ChangeTheme/></a></li>
                     </ul>
                 </div>

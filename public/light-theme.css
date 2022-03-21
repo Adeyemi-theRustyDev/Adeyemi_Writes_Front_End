@@ -125,6 +125,27 @@ nav{
     width: 100%;
 }
 
+
+/* Create component */
+.create-post{
+    width: 60%;
+    margin: 0 auto;
+    border: 3px solid black;
+    padding: 1em;
+}
+.create-post h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.create-post input, textarea{
+    width: 100%;
+    padding-block: 1em;
+    margin-bottom: 3em;
+}
+textarea{
+    height: 30em;
+}
+
 /* Footer component */
 footer{
     text-align: center;
@@ -197,5 +218,8 @@ footer .social-icons{
     }
     .poemOTWeek{
         width: 80%;
+    }
+    .create-post{
+        width: 95%;
     }
 }

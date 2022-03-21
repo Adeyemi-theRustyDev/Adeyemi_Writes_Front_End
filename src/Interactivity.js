@@ -40,7 +40,7 @@ const Interactivity = () => {
             <span className="dot"></span>
           </div>
 
-          <div class="potwText">
+          <div className="potwText">
             Worried about the worries <br />
             till it got worrisome <br />
             and I was tired and weary. <br />
