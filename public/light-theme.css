@@ -8,6 +8,9 @@
 .section{
     padding: 2em;
 }
+.content{
+    margin-top: 4em;
+}
 
 /* Navbar components */
 header{
@@ -68,7 +71,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 4em;
 }
 .author-info{
     width: 45%;
@@ -106,6 +108,21 @@ nav{
 }
 .wip-description{
     width: 50%;
+}
+
+
+/* Interactivity Component */
+.poemOTWeek{
+    width: 50%;
+    margin: 1em auto;
+    border: 3px solid black;
+    padding: 1em;
+}
+.slideshow-container{
+    border: 1px solid yellow;
+}
+.mySlides img{
+    width: 100%;
 }
 
 /* Footer component */
