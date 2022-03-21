@@ -161,11 +161,12 @@ textarea{
 /* Footer component */
 footer{
     text-align: center;
-    padding: 1em;
+    margin-block-start: 1em;
 }
 footer .social-icons{
     display: flex;
     justify-content: space-evenly;
+    padding-inline: 1em;
 }
  .social-icons a{
     font-size: 2em;
