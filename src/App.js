@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/interactivity">
                 <Interactivity/>
             </Route>
-            <Route>
+            <Route exact path="/create">
               <Create/>
             </Route>
           </Switch>

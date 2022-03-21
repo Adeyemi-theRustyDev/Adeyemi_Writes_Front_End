@@ -9,7 +9,7 @@ const Create = () => {
                 <input type="file" name="" id="image" />
                 <label htmlFor="body">Body:</label>
                 <textarea id="body" ></textarea>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" className="submit" />
             </form>
         </div>
      );

@@ -128,19 +128,31 @@ nav{
 
 /* Create component */
 .create-post{
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     border: 3px solid black;
     padding: 1em;
+    background-image: url("images/yemiweb.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.create-post label{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
 }
 .create-post h1{
+    color: var(--secondary-color);
     text-align: center;
     text-transform: uppercase;
 }
-.create-post input, textarea{
+.create-post input:not(.submit), textarea{
     width: 100%;
     padding-block: 1em;
     margin-bottom: 3em;
+    border: 1px solid grey;
+    font-size: 1rem;
+    background-color: hsl( 0 0% 100% / 0.2);
 }
 textarea{
     height: 30em;
