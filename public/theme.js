@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
   
     const toggleTheme = document.querySelector('#theme-toggle')
-    toggleTheme.addEventListener('click', ()=>{
+    toggleTheme.addEventListener('change', ()=>{
       if (styleSheet.href.includes('light')){
             styleSheet.href = 'dark-theme.css';
       }

@@ -1,7 +1,10 @@
 const ChangeTheme = () => {
     return ( 
         <div className="theme-toggler">
-            <button id="theme-toggle">Change Theme</button>
+            <label class="switch">
+                <input id="theme-toggle" type="checkbox"/>
+                <span class="slider round"></span>
+            </label>
         </div>
      );
 }
