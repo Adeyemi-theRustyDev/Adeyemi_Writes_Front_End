@@ -110,6 +110,37 @@ nav{
     width: 50%;
 }
 
+/* Library Component */
+.library{
+    padding: 2em;
+}
+.library .library-title{
+    font-size: 3em;
+    font-weight: 800;
+    text-align:center;
+    text-decoration:underline;
+}
+.library input{
+    width: 60%;
+    float: right;
+    padding-block: .5em;
+    font-size: 1em;
+    margin-top: 1em;
+}
+.library .poem-map{
+    border: 2px solid black;
+    width: 50%;
+    margin: 5em  auto 0;
+    text-align: center;
+}
+.library .poem-map img{
+    width: 90%;
+}
+.library .poem-details h1{
+    color: var(--primary-color);
+}
+
+
 
 /* Interactivity Component */
 .poemOTWeek{
@@ -194,7 +225,7 @@ footer .social-icons{
 
 
 /* Media queries for mobile devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     /* Nav styles */
     nav{
         padding: 1em;
@@ -247,6 +278,16 @@ footer .social-icons{
     .poemOTWeek{
         width: 80%;
     }
+
+    /* Library */
+    .library input{
+        width: 90%;
+    }
+    .library .poem-map{
+        width: 100%;
+    }
+
+    /* create */
     .create-post{
         width: 95%;
     }
