@@ -10,6 +10,9 @@ html{
     --primary-color: rgb(255, 72, 0);
     --secondary-color: rgb(255, 30, 0);
 }
+body{
+    /* font-family: 'Poppins', sans-serif !important*/
+}
 .section{
     padding: 2em;
 }
@@ -45,6 +48,7 @@ nav{
     color: black;
     display: block;
     padding: 1em;
+    border-top: 1px dashed grey
 }
 .nav-links a:hover{
     text-decoration: underline;
@@ -131,7 +135,7 @@ nav{
 }
 .library input{
     width: 100%;
-    float: right;
+    border: 2px solid var( --secondary-color);
     padding-block: .5em;
     font-size: 1em;
     margin-top: 1em;
@@ -140,6 +144,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:2em;
+    overflow-x: auto;
     border: 2px solid black;
     width: 80%;
     margin: 5em  auto 0;
@@ -149,8 +154,9 @@ nav{
 .library .poem-details{
     border: 1px solid var(--secondary-color);
 }
-.library .poem-map img{
+.library .poem-details img{
     width: 90%;
+    /* box-shadow: 0 9px 18px 0 black; */
 }
 .library .poem-details h1{
     color: var(--primary-color);
@@ -296,8 +302,8 @@ footer .social-icons{
     }
 
     /* Library */
-    .library input{
-        width: 90%;
+    .library .search{
+        width: 100%;
     }
     .library .poem-map{
         width: 100%;
