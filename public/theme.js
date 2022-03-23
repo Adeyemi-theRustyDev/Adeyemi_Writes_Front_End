@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         styleSheet.href = storedTheme;
     }
   
-    const toggleTheme = document.querySelector('#theme-toggle')
+    const toggleTheme = document.querySelector('#theme-toggle');
+    const slider = document.querySelector('.round');
     toggleTheme.addEventListener('change', ()=>{
       if (styleSheet.href.includes('light')){
             styleSheet.href = 'dark-theme.css';
