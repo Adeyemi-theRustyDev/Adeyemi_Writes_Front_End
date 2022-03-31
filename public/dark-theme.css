@@ -156,6 +156,10 @@ nav{
 .author-info{
     width: 45%;
 }
+.author-info span a{
+    color: var(--primary-color);
+    margin-inline: .3em;
+}
 .author-info img{
     width: max(40%, 12em);
     border-radius: 50%;
@@ -369,7 +373,7 @@ footer .social-icons{
         gap: 2em;
     }
     .wip-image{
-        width: 60%;
+        width: 100%;
     }
     .wip-description{
         width: 100%;
@@ -390,5 +394,11 @@ footer .social-icons{
     /* Create */
     .create-post{
         width: 95%;
+    }
+
+    /* Footer */
+    .social-icons + p{
+        font-size: 1rem;
+        font-weight: 300;
     }
 }
