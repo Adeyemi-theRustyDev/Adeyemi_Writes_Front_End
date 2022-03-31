@@ -1,6 +1,5 @@
 html{
-    /* font-family: sans-serif; */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif !important;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -11,9 +10,6 @@ html{
     --primary-color: rgb(255, 72, 0);
     --secondary-color: rgb(255, 30, 0);
     color: white;
-}
-body{
-    /* font-family: 'Poppins', sans-serif !important*/
 }
 .section{
     padding: 2em;
@@ -36,12 +32,15 @@ button:hover{
 
 /* Navbar components */
 header{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
     background-color: hsl( 0 0% 100% / 0.02);
     backdrop-filter: blur(2rem);
+    font-family: 'Red Hat Display', sans-serif;
 }
 nav{
     display: flex;

@@ -1,5 +1,6 @@
 html{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 900;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -10,9 +11,6 @@ html{
     --primary-color: rgb(255, 72, 0);
     --secondary-color: rgb(255, 30, 0);
 }
-body{
-    /* font-family: 'Poppins', sans-serif !important*/
-}
 .section{
     padding: 2em;
 }
@@ -22,6 +20,7 @@ body{
 
 /* Navbar components */
 header{
+    font-family: 'Red Hat Display', sans-serif;
     position: fixed;
     top: 0;
     width: 100%;
