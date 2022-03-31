@@ -2,8 +2,10 @@ import Navbar from './Navbar';
 import Home from'./Home';
 import Footer from './Footer';
 import Interactivity from './Interactivity';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Library from './library';
+import Error from './Error';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+
 
 
 
@@ -22,6 +24,9 @@ function App() {
             </Route>
             <Route exact path="/interactivity">
                 <Interactivity/>
+            </Route>
+            <Route path="*">
+                <Error/>
             </Route>
           </Switch>
         </div>
