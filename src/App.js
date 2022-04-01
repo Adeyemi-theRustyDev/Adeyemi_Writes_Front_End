@@ -5,6 +5,7 @@ import Interactivity from './Interactivity';
 import Library from './library';
 import Error from './Error';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Featured from './FeaturedWriters';
 
 
 
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <Route exact path="/interactivity">
                 <Interactivity/>
+            </Route>
+            <Route exact path="/featured">
+                <Featured/>
             </Route>
             <Route path="*">
                 <Error/>

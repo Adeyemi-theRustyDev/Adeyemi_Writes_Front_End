@@ -11,6 +11,10 @@ html{
     --secondary-color: rgb(255, 30, 0);
     color: white;
 }
+*::selection{
+    color: white;
+    background-color: green;
+}
 .section{
     padding: 2em;
 }

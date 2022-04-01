@@ -21,7 +21,7 @@ const Navbar = () => {
                         <li><a href="/">Home</a></li>
                         <li><a href="/library">Library</a></li>
                         <li><a href="/interactivity">Interactivity</a></li>
-                        <li><a href="/interactivity">Favourite Poets</a></li>
+                        <li><a href="/featured">Favourite Poets</a></li>
                         <li><span><ChangeTheme/></span></li>
                     </ul>
                 </div>

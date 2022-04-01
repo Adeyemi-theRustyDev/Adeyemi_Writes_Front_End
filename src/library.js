@@ -141,7 +141,7 @@ const Library = () => {
                     <div className="poem-details" key={poem.id}>
                         <h1>{poem.title}</h1>
                         <img src={poem.imageUrl} alt=""/>
-                        <a href={poem.imageUrl} target="_blank" rel="noreferrer"><p>{poem.body}</p></a>
+                        <a href={poem.imageUrl} target="_blank" rel="noreferrer" download><p>{poem.body}</p></a>
                         <p>Created at {poem.created}</p>
                     </div>
                 ))}
