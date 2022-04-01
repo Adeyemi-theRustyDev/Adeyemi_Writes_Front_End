@@ -1,5 +1,5 @@
 import ChangeTheme from "./ChangeTheme";
-
+import {Link} from 'react-router-dom';
 const Navbar = () => {
 
     const handleToggle = () =>{
@@ -18,10 +18,10 @@ const Navbar = () => {
                 </p>
                 <div className="nav-links">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/library">Library</a></li>
-                        <li><a href="/interactivity">Interactivity</a></li>
-                        <li><a href="/featured">Favourite Poets</a></li>
+                        <li><Link className="react-anchor" to="/">Home</Link></li>
+                        <li><Link className="react-anchor" to="/">Library</Link></li>
+                        <li><Link className="react-anchor" to="/interactivity">Interactivity</Link></li>
+                        <li><Link className="react-anchor" to="/featured">Favourite Poets</Link></li>
                         <li><span><ChangeTheme/></span></li>
                     </ul>
                 </div>

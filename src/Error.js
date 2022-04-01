@@ -5,7 +5,7 @@ const Error = () => {
             <img src="images/Logosmall.png" alt="" />
             </div>
             <p> <span>Error! Error!</span> The Page you are looking for can not be found.</p>
-            <a href="/home">go back to the home page</a>
+            <Link to="/home">go back to the home page</Link>
         </div>
      );
 }
