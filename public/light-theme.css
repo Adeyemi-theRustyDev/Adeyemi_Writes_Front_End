@@ -132,6 +132,29 @@ nav{
     border-radius: 50%;
     }
 
+/* Tool tip to show current theme*/
+.theme-toggler {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+    }
+.theme-toggler .theme-togglertext {
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    padding: 5px 0;
+    /* Position the theme-toggler */
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    z-index: 1;
+}
+.theme-toggler:hover .theme-togglertext {
+    visibility: visible;
+}
+
 /* Home  Component */
     /* Intro section  */
 .intro{

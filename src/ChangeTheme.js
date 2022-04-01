@@ -5,6 +5,7 @@ const ChangeTheme = () => {
                 <input id="theme-toggle" type="checkbox"/>
                 <span className="slider round"></span>
             </label>
+            <span id="theme-name" className="theme-togglertext" >Dark Mode</span>
         </div>
      );
 }
