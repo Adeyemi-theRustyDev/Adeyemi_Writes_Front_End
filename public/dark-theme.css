@@ -30,6 +30,7 @@ button:hover{
     margin-top: 4em;
 }
 
+
 /* Navbar components */
 header{
     font-family: 'Red Hat Display', sans-serif;
@@ -80,26 +81,24 @@ nav{
 }
 .nav-toggler .bar{
     height: 3px;
-    /* width: 45px; */
     width: 100%;
     background-color: white;
     border-radius: 10px;
 }
-    /* Switch Component */
- .switch {
+
+/* Switch Component */
+.switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-    }
-
-    .switch input { 
+}
+.switch input { 
     opacity: 0;
     width: 0;
     height: 0;
-    }
-
-    .slider {
+}
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -109,9 +108,8 @@ nav{
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-    }
-
-    .slider:before {
+}
+.slider::before {
     position: absolute;
     content: "";
     height: 26px;
@@ -121,57 +119,53 @@ nav{
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-    }
-
-    input:checked + .slider {
+}
+input:checked + .slider {
     background-color: black;
-    }
-
-    input:focus + .slider {
+}
+input:focus + .slider {
     box-shadow: 0 0 1px black;
-    }
-
-    input:checked + .slider:before {
+}
+input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-    }
-
-    /* Rounded sliders */
-    .slider.round {
+}
+/* Rounded sliders */
+.slider.round {
     border-radius: 34px;
-    }
-
-    .slider.round:before {
+}
+.slider.round:before {
     border-radius: 50%;
-    }
-    /* Tool tip to show current theme*/
-    .theme-toggler {
-        position: relative;
-        display: inline-block;
-        /* border-bottom: 1px dotted black; */
-      }
-    .theme-toggler .theme-togglertext {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        border: 1px solid var(--primary-color);
-        padding: 5px 0;
-        /* Position the theme-toggler */
-        position: absolute;
-        top: -5px;
-        left: 105%;
-        z-index: 1;
-    }
-    .theme-toggler:hover .theme-togglertext {
-        visibility: visible;
-    }
+}
+/* Tool tip to show current theme*/
+.theme-toggler {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+}
+.theme-toggler .theme-togglertext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    padding: 5px 0;
+    /* Position the theme-toggler */
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    z-index: 1;
+}
+.theme-toggler:hover .theme-togglertext {
+    visibility: visible;
+}
+
 
 /* Home  Component */
-    /* Intro section  */
+/* Intro section  */
 .intro{
     display: flex;
     justify-content: space-between;
@@ -201,7 +195,8 @@ nav{
 .img-prompt .description{
     padding-block: .5em;
 }
-    /* Wip section */
+
+/* Wip section */
 .wip{
     display: flex;
     justify-content: space-between;
@@ -219,6 +214,7 @@ nav{
 .wip-description{
     width: 50%;
 }
+
 
 /* Library Component */
 .library{
@@ -263,7 +259,6 @@ nav{
 }
 
 
-
 /* Interactivity Component */
 .poemOTWeek{
     width: 50%;
@@ -277,6 +272,7 @@ nav{
 .mySlides img{
     width: 100%;
 }
+
 
 /* Error component */
 .error-page{
@@ -296,6 +292,8 @@ nav{
     width: 15em;
     margin:1em auto;
 }
+
+
 /* Footer component */
 footer{
     text-align: center;
@@ -367,7 +365,6 @@ footer .social-icons{
     .nav-links.active{
         display: flex;
     }
-
     /* Home styles */
     /* Intro styles */
     .intro{
