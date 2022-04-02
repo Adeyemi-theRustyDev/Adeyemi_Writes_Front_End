@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-const Library = () => {
+const Poems = () => {
     let myPoems = [
         {
             title: "Test poem",
@@ -134,7 +134,7 @@ const Library = () => {
 
     return ( 
         <div className="library">
-            <h1 className="library-title">Library</h1>
+            <h1 className="library-title">Poem Library</h1>
             <div className="search">           
                 <input type="search" name="" id="" placeholder="Search through poems..." />
             </div>
@@ -154,4 +154,4 @@ const Library = () => {
      );
 }
  
-export default Library;
+export default Poems;
