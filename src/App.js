@@ -1,11 +1,12 @@
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import Home from'./Home';
-import Footer from './Footer';
-import Interactivity from './Interactivity';
-import Library from './library';
-import Error from './Error';
+import Footer from './components/Footer';
+import Interactivity from './pages/Interactivity';
+import Error from './pages/Error';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Featured from './FeaturedWriters';
+import Featured from './pages/FeaturedWriters';
+import Library from './pages/Library';
+import Poems from './pages/Poems';
 
 
 
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route exact path="/library">
                 <Library/>
+            </Route>
+            <Route exact path="/poems">
+                <Poems/>
             </Route>
             <Route exact path="/interactivity">
                 <Interactivity/>
