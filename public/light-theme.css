@@ -202,28 +202,28 @@ visibility: visible;
 }
 
 
-/* Library Component */
-.library{
+/* poem-component Component */
+.poem-component{
     padding: 2em;
 }
-.library .library-title{
+.poem-component .poem-component-title{
     font-size: 3em;
     font-weight: 800;
     text-align:center;
     text-decoration:underline;
 }
-.library .search{
+.poem-component .search{
     width: 60%;
     margin:  auto;
 }
-.library input{
+.poem-component input{
     width: 100%;
     border: 2px solid var( --secondary-color);
     padding-block: .5em;
     font-size: 1em;
     margin-top: 1em;
 }
-.library .poem-map{
+.poem-component .poem-map{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:2em;
@@ -234,13 +234,13 @@ visibility: visible;
     text-align: center;
     padding: 1em;
 }
-.library .poem-details{
+.poem-component .poem-details{
     border: 1px solid var(--secondary-color);
 }
-.library .poem-details img{
+.poem-component .poem-details img{
     width: 90%;
 }
-.library .poem-details h1{
+.poem-component .poem-details h1{
     color: var(--primary-color);
 }
 
@@ -375,11 +375,14 @@ footer .social-icons{
         width: 80%;
     }
 
-    /* Library */
-    .library .search{
+    /* poem-component */
+    .poem-component{
+        padding:1em;
+    }
+    .poem-component .search{
         width: 100%;
     }
-    .library .poem-map{
+    .poem-component .poem-map{
         width: 100%;
         grid-template-columns: 1fr;
     }

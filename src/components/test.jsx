@@ -5,7 +5,7 @@ const Interactivity = () => {
     }, 3000);
   };
   return (
-    <div className="interactivity-component" onLoad={myFunction}>
+    <div className="test-component" onLoad={myFunction}>
       <div className="poemOTWeek">
         <h2>A Portal To The Other Side &darr;</h2>
         <main className="slides">
