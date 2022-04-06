@@ -1,8 +1,4 @@
-html{
-    font-family: 'Poppins', sans-serif !important;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Red+Hat+Display&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +6,11 @@ html{
     --primary-color: rgb(255, 72, 0);
     --secondary-color: rgb(255, 30, 0);
     color: white;
+}
+html{
+    font-family: 'Poppins', sans-serif !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 *::selection{
     color: white;
@@ -48,7 +49,6 @@ header{
     z-index: 9999;
     background-color: hsl( 0 0% 100% / 0.02);
     backdrop-filter: blur(2rem);
-    font-family: 'Red Hat Display', sans-serif;
 }
 nav{
     display: flex;
