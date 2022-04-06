@@ -12,10 +12,12 @@ const Create = () => {
                 <input type="text" id="category"/>
                 <label htmlFor="type">Post Type:</label>
                 <select id="type">
-                    <option value="poem"></option>
-                    <option value="blog post"></option>
-                    <option value="story"></option>
+                    <option value="poem">Poem</option>
+                    <option value="blog post">Blog post</option>
+                    <option value="story">Story</option>
                 </select>
+                <label htmlFor="body">Body:</label>
+                <textarea id="body"></textarea>
             </form>
         </div>
      );
