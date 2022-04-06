@@ -1,4 +1,4 @@
-const Interactivity = () => {
+const Test = () => {
   const myFunction = () => {
     setTimeout(() => {
       console.log("I work");
@@ -81,4 +81,4 @@ const Interactivity = () => {
   );
 };
 
-export default Interactivity;
+export default Test;

@@ -133,8 +133,8 @@ const Poems = () => {
     ]
 
     return ( 
-        <div className="library">
-            <h1 className="library-title">Poem Library</h1>
+        <div className="poem-component">
+            <h1 className="poem-component-title">Poem Library</h1>
             <div className="search">           
                 <input type="search" name="" id="" placeholder="Search through poems..." />
             </div>
