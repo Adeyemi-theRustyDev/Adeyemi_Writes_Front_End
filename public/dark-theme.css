@@ -281,6 +281,44 @@ input:checked + .slider:before {
 }
 
 
+/* Create component */
+.create{
+    padding-top: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.create-form{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: grey;
+    
+}
+.create label{
+    font-size: 2rem;
+    color: black;
+}
+.create input, .create textarea, .create select{
+    display: block;
+    width: 100%;
+    padding: .5em;
+    font-size: 1.2rem;
+    background-color: rgb(236, 233, 233);
+    border: 1px solid black;
+    color: black;
+}
+.create input{
+    margin-block-end: 2em;
+}
+.create input:focus, .create textarea:focus{
+    border: 1px solid black;
+}
+.create textarea{
+    height: 600px;
+}
+.create option{
+    color: black;
+}
+
 /* Error component */
 .error-page{
     text-align: center;
@@ -406,6 +444,19 @@ footer .social-icons{
     .poem-component .poem-map{
         width: 100%;
         grid-template-columns:  1fr;
+    }
+    
+    /* Create */
+    .create{
+        padding: .5em;
+    }
+    .create-form{
+        width: 100%;
+        margin-top: 0;
+        padding: 1em;
+    }
+    .create-form label{
+        font-size: 1rem;
     }
 
     /* Footer */
