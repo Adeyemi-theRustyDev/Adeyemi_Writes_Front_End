@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import Bloglist from '../bloglist';
-const Poems = () => {
+import Bloglist from '../components/Bloglist';
+const PoemsAdvanced = () => {
     const [blogs, setBlogs] = useState(null);
     const [isPending, setIsPending] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(()=> {
-        fetch('http://localhost:8005/posts')
+    fetch('http://localhost:8005/posts')
         .then(res => {
           return  res.json();
         })
@@ -18,6 +18,7 @@ const Poems = () => {
             setError(true);
         })
     }, [blogs]);
+
     return ( 
         <div className="poem-component">
             <h1 className="poem-component-title">Poem Library</h1>
@@ -33,4 +34,4 @@ const Poems = () => {
      );
 }
  
-export default Poems;
+export default PoemsAdvanced;

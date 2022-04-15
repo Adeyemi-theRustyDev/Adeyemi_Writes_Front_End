@@ -248,20 +248,26 @@ visibility: visible;
     color: var(--primary-color);
 }
 
-
-
-/* Interactivity Component */
-.poemOTWeek{
-    width: 50%;
-    margin: 1em auto;
-    border: 3px solid black;
-    padding: 1em;
+/* Library component */
+.library-home{
+    padding: 2em 1em;
 }
-.slideshow-container{
-    border: 1px solid yellow;
+.library-home ul{
+    list-style: none;
 }
-.mySlides img{
-    width: 100%;
+.library-home li{
+    border-bottom: 1px solid #555;
+}
+.library-home li, .library-blogs{
+    padding: 1em 0;
+    margin: .5em;;
+    text-align: center;
+}
+.library-home li:hover{
+    box-shadow:.5em .5em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
 }
 
 /* Create component */
@@ -440,6 +446,6 @@ footer .social-icons{
     /* Footer */
     .social-icons + p{
         font-size: 1rem;
-        font-weight: 300;
+        /* font-weight: 300; */
     }
 }

@@ -2,6 +2,7 @@ const Create = () => {
     return ( 
         <div className="create">
             <div className="create-form">
+                <h1 className="create-title">Create</h1>
                 <form action="">
                     <label htmlFor="title">Title:</label>
                     <input type="text" id="title"/>

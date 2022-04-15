@@ -1,3 +1,4 @@
+import {Link } from 'react-router-dom';
 const Error = () => {
     return ( 
         <div className="error-page">
@@ -5,7 +6,7 @@ const Error = () => {
             <img src="images/Logosmall.png" alt="" />
             </div>
             <p> <span>Error! Error!</span> The Page you are looking for can not be found.</p>
-            <Link to="/home">go back to the home page</Link>
+            <Link to="/">go back to the home page</Link>
         </div>
      );
 }

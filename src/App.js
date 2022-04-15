@@ -5,13 +5,8 @@ import Interactivity from './pages/Interactivity';
 import Error from './pages/Error';
 import Create from './pages/Create';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Featured from './pages/FeaturedWriters';
 import Library from './pages/Library';
-import Poems from './pages/Poems';
-
-
-
-
+import PoemsAdvanced from './pages/Poemadvanced';
 function App() {
   return (
     <Router>
@@ -29,13 +24,10 @@ function App() {
                 <Library/>
             </Route>
             <Route exact path="/poems">
-                <Poems/>
+                <PoemsAdvanced/>
             </Route>
             <Route exact path="/interactivity">
                 <Interactivity/>
-            </Route>
-            <Route exact path="/featured">
-                <Featured/>
             </Route>
             <Route path="*">
                 <Error/>

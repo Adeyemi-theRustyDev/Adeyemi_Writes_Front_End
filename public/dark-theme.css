@@ -247,7 +247,7 @@ input:checked + .slider:before {
     margin-top: 1em;
     color: black;
 }
-.poem-component .poem-map{
+ .poem-map{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     overflow-x: auto;
@@ -266,20 +266,26 @@ input:checked + .slider:before {
 }
 
 
-/* Interactivity Component */
-.poemOTWeek{
-    width: 50%;
-    margin: 1em auto;
-    border: 3px solid white;
-    padding: 1em;
+/* Library component */
+.library-home{
+    padding: 2em 1em;
 }
-.slideshow-container{
-    border: 1px solid yellow;
+.library-home ul{
+    list-style: none;
 }
-.mySlides img{
-    width: 100%;
+.library-home li{
+    border-bottom: 1px solid #555;
 }
-
+.library-home li, .library-blogs{
+    padding: 1em 0;
+    margin: .5em;;
+    text-align: center;
+}
+.library-home li:hover{
+    box-shadow:.5em .5em 1em rgba(143, 143, 143, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+}
 
 /* Create component */
 .create{
