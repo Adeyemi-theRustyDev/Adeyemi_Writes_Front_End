@@ -6,7 +6,7 @@ import Error from './pages/Error';
 import Create from './pages/Create';
 import Library from './pages/Library';
 import PoemsAdvanced from './pages/Poemadvanced';
-import DetailedPoem from './components/DetailedPoem';
+import DetailedPoem from './pages/DetailedPoem';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
             <Route exact path="/poems">
                 <PoemsAdvanced/>
             </Route>
-            <Route exact path="/poems/:id">
+            <Route path="/poems/:id">
                 <DetailedPoem/>
             </Route>
             <Route exact path="/interactivity">

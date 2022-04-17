@@ -4,7 +4,7 @@ const Bloglist = ({blogs}) => {
         <>
             {blogs.map((poem)=>(
                     <div className="poem-details" key={poem.id}>
-                        <Link to={`/blogs/${poem.id}`}>
+                        <Link to={`/poems/${poem.id}`}>
                             <h1>{poem.title}</h1>
                             <img src={poem.imageUrl} alt=""/>
                             <p>{poem.body}</p>
