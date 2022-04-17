@@ -1,12 +1,13 @@
 import Navbar from './components/Navbar';
-import Home from'./Home';
+import Home from'./pages/Home';
 import Footer from './components/Footer';
 import Interactivity from './pages/Interactivity';
 import Error from './pages/Error';
 import Create from './pages/Create';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Library from './pages/Library';
 import PoemsAdvanced from './pages/Poemadvanced';
+import DetailedPoem from './components/DetailedPoem';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 function App() {
   return (
     <Router>
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route exact path="/poems">
                 <PoemsAdvanced/>
+            </Route>
+            <Route exact path="/poems/:id">
+                <DetailedPoem/>
             </Route>
             <Route exact path="/interactivity">
                 <Interactivity/>

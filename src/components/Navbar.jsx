@@ -21,7 +21,6 @@ const Navbar = () => {
                         <li><Link className="react-anchor" to="/">Home</Link></li>
                         <li><Link className="react-anchor" to="/library">Library</Link></li>
                         <li><Link className="react-anchor" to="/interactivity">Interactivity</Link></li>
-                        <li><Link className="react-anchor" to="/featured">Favourite Poets</Link></li>
                         <li><span><ChangeTheme/></span></li>
                     </ul>
                 </div>
