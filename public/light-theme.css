@@ -201,7 +201,7 @@ visibility: visible;
     width: 100%;
     height: 100%;
 }
-.wip-description, .scribble-details-links{
+.wip-description, .scribbles-details-links{
     width: 50%;
 }
 
@@ -240,6 +240,9 @@ visibility: visible;
 }
 .poem-component .poem-details{
     border: 1px solid var(--secondary-color);
+}
+.poem-details a{
+    text-decoration: none;
 }
 .poem-component .poem-details img{
     width: 90%;
@@ -388,8 +391,9 @@ footer .social-icons{
     .nav-links.active{
         display: flex;
     }
+
     /* Home styles */
-    /* Intro styles */
+        /* Intro styles */
     .intro{
         flex-direction: column;
         gap: 2em;
@@ -405,7 +409,7 @@ footer .social-icons{
     .wip-image{
         width: 100%;
     }
-    .wip-description{
+    .wip-description, .scribbles-details-links{
         width: 100%;
     }
     .poemOTWeek{
@@ -436,10 +440,5 @@ footer .social-icons{
     }
     .create-form label{
         font-size: 1rem;
-    }
-    /* Footer */
-    .social-icons + p{
-        font-size: 1rem;
-        /* font-weight: 300; */
     }
 }

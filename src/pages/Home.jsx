@@ -60,12 +60,12 @@ const Home = () => {
 
       {/* Scribbles */}
       <section className="scribbles section">
-        <div className="scribble-details-links">
-          <p>
+        <div className="scribbles-details-links">
+          <div className="scribbles-description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
             asperiores repellat dicta nulla, corporis laborum debitis et optio
             rerum nisi explicabo doloribus soluta ipsam earum!
-          </p>
+          </div>
           <p>Some of my other poems are:</p>
           <ul>
             <li><a href="#"></a></li>

@@ -5,9 +5,10 @@ import Interactivity from './pages/Interactivity';
 import Error from './pages/Error';
 import Create from './pages/Create';
 import Library from './pages/Library';
-import PoemsAdvanced from './pages/Poemadvanced';
+import Poems from './pages/PoemsLibrary';
 import DetailedPoem from './pages/DetailedPoem';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+
 function App() {
   return (
     <Router>
@@ -25,7 +26,7 @@ function App() {
                 <Library/>
             </Route>
             <Route exact path="/poems">
-                <PoemsAdvanced/>
+                <Poems/>
             </Route>
             <Route path="/poems/:id">
                 <DetailedPoem/>
