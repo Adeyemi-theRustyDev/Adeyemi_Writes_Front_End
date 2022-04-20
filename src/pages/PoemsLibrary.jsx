@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import Bloglist from '../components/Bloglist';
 import useFetch from '../tools/useFetch';
 const Poems = () => {
-
     const {data: blogs, isPending, error} = useFetch('http://localhost:8000/posts');
     return ( 
         <div className="poem-component">

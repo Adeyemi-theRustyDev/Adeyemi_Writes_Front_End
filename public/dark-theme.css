@@ -221,6 +221,26 @@ input:checked + .slider:before {
     width: 50%;
 }
 
+/* Library component */
+.library-home{
+    padding: 2em 1em;
+}
+.library-home ul{
+    list-style: none;
+}
+.library-home li{
+    border-bottom: 1px solid #555;
+}
+.library-home li, .library-blogs{
+    padding: 1em 0;
+    margin: .5em;;
+    text-align: center;
+}
+.library-home li:hover{
+    box-shadow:.5em .5em 1em rgba(143, 143, 143, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+}
 
 /* poem-component Component */
 .poem-component{
@@ -260,6 +280,12 @@ input:checked + .slider:before {
 .poem-component .poem-details{
     border: 1px solid white;
 }
+.poem-component .poem-details:hover{
+    box-shadow: 1em 1em 2em rgba(65, 64, 64, 0.3);
+    background-color: rgba(63, 62, 62, 0.6);
+    border-radius: 15px;
+    cursor: pointer;
+}
 .poem-details a{
     text-decoration: none;
 }
@@ -267,26 +293,30 @@ input:checked + .slider:before {
     width: 90%;
 }
 
-
-/* Library component */
-.library-home{
-    padding: 2em 1em;
-}
-.library-home ul{
-    list-style: none;
-}
-.library-home li{
-    border-bottom: 1px solid #555;
-}
-.library-home li, .library-blogs{
-    padding: 1em 0;
-    margin: .5em;;
+/* Detailed Poem [Component] */
+.detailed-poem{
+    background-color: #272727;
     text-align: center;
 }
-.library-home li:hover{
-    box-shadow:.5em .5em 1em rgba(143, 143, 143, 0.3);
-    border-radius: 12px;
-    cursor: pointer;
+.detailed-poem .details{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid rgb(196, 196, 196);
+}
+.detailed-poem h1{
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 1em;
+}
+.detailed-poem .poem-image{
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(196, 196, 196);
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.detailed-poem img{
+    width: 100%;
 }
 
 /* Create component */
