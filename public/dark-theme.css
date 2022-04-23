@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color: rgb(255, 72, 0);
+    --secondary-color: rgb(255, 30, 0);
+    color: white;
+}
+html{
+    font-family: 'Poppins', sans-serif !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+*::selection{
+    color: white;
+    background-color: green;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.section{
+    padding: 2em;
+}
+body, .intro, .wip, .description, .footer{
+    background-color: black;
+    color: white;
+}
+button{
+    background-color: hsl( 0 0% 100% / 0.02);
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    color: var(--primary-color);
+}
+.content{
+    margin-top: 4em;
+}
+
+
+/* Navbar components */
+header{
+    font-family: 'Red Hat Display', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: hsl( 0 0% 100% / 0.02);
+    backdrop-filter: blur(2rem);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.brand-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color : var(--primary-color);
+}
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+}
+.nav-links  .react-anchor, .nav-links span{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1em;
+}
+.nav-links .react-anchor:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+    background-color: #555;
+}
+.nav-toggler{
+    position: absolute;
+    top: .75rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 21px;
+    cursor: pointer;
+}
+.nav-toggler .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Switch Component */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: black;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px black;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+/* Tool tip to show current theme*/
+.theme-toggler {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+}
+.theme-toggler .theme-togglertext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    padding: 5px 0;
+    /* Position the theme-toggler */
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    z-index: 1;
+}
+.theme-toggler:hover .theme-togglertext {
+    visibility: visible;
+}
+
+
+/* Home  Component */
+/* Intro section  */
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.author-info{
+    width: 45%;
+}
+.author-info span a{
+    color: var(--primary-color);
+    margin-inline: .3em;
+}
+.author-info img{
+    width: max(40%, 12em);
+    border-radius: 50%;
+}
+.img-prompt{
+    width: 45%;
+    border: 1px solid yellow;
+    padding: .3em;
+    text-align: center;
+    background-color: #eee;
+}
+.img-prompt img{
+    width: 100%;
+}
+.img-prompt .description{
+    padding-block: .5em;
+}
+
+/* Wip section */
+.wip, .scribbles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wip-image{
+    width: 40%;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgb(182, 182, 182);
+}
+.wip-image img{
+    width: 100%;
+    height: 100%;
+}
+.wip-description, .scribbles-details-links{
+    width: 50%;
+}
+
+/* Library component */
+.library-home{
+    padding: 2em 1em;
+}
+.library-home ul{
+    list-style: none;
+}
+.library-home li{
+    border-bottom: 1px solid #555;
+}
+.library-home li, .library-blogs{
+    padding: 1em 0;
+    margin: .5em;;
+    text-align: center;
+}
+.library-home li:hover{
+    box-shadow:.5em .5em 1em rgba(143, 143, 143, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* poem-component Component */
+.poem-component{
+    padding: 2em;
+}
+.poem-component .poem-component-title{
+    font-size: 3em;
+    font-weight: 800;
+    text-align:center;
+    text-decoration:underline;
+    color: var(--primary-color);
+}
+.poem-component .search{
+    width: 60%;
+    margin:  auto;
+}
+.poem-component input{
+    width: 100%;
+    border: 3px solid orange;
+    outline: none;
+    padding-block: .5em;
+    font-size: 1em;
+    margin-top: 1em;
+    color: black;
+}
+ .poem-map{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: auto;
+    gap: 2em;
+    border: 2px solid orangered;
+    width: 80%;
+    margin: 5em  auto 0;
+    text-align: center;
+    padding: 1em;
+}
+.poem-component .poem-details{
+    border: 1px solid white;
+}
+.poem-component .poem-details:hover{
+    box-shadow: 1em 1em 2em rgba(65, 64, 64, 0.3);
+    background-color: rgba(63, 62, 62, 0.6);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.poem-details a{
+    text-decoration: none;
+}
+.poem-component .poem-map img{
+    width: 90%;
+}
+
+/* Detailed Poem [Component] */
+.detailed-poem{
+    background-color: #272727;
+    text-align: center;
+}
+.detailed-poem .details{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid rgb(196, 196, 196);
+}
+.detailed-poem h1{
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 1em;
+}
+.detailed-poem .poem-image{
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(196, 196, 196);
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.detailed-poem img{
+    width: 100%;
+}
+
+/* Create component */
+.create{
+    padding-top: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.create-form{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: grey;
+    
+}
+.create label{
+    font-size: 2rem;
+    color: black;
+}
+.create input, .create textarea, .create select{
+    display: block;
+    width: 100%;
+    padding: .5em;
+    font-size: 1.2rem;
+    background-color: rgb(236, 233, 233);
+    border: 1px solid black;
+    color: black;
+}
+.create input{
+    margin-block-end: 2em;
+}
+.create input:focus, .create textarea:focus{
+    border: 1px solid black;
+}
+.create textarea{
+    height: 600px;
+}
+.create option{
+    color: black;
+}
+
+/* Loading component */
+#loading{
+    text-align: center;
+    font-size: 2rem;
+}
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid var(--primary-color);
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #root {
+    display: none;
+    /* text-align: center; */
+  }
+
+/* Error component */
+.error-page{
+    text-align: center;
+    padding: 3em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.error-page span{
+    color: rgb(233, 30, 30);
+}
+.error-page a{
+    color: blue
+}
+
+
+
+/* Footer component */
+footer{
+    text-align: center;
+    margin-block-start: 1em;
+}
+footer .social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 1em;
+}
+ .social-icons a{
+    font-size: 2em;
+}
+.social-icons + p{
+    font-size: 2rem;
+}
+.fa-facebook-square{
+    color: blue;
+  }
+.fa-instagram{
+color: rgb(105, 11, 105);
+}
+.fa-pinterest{
+color: rgb(226, 29, 29);
+}
+.fa-twitter{
+color: rgb(11, 11, 66);
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .nav-links ul{
+        align-items: center;
+    }
+}
+
+
+/* Media queries for tablets */
+@media screen and (max-width: 950px){
+    .poem-component .poem-map{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media queries for mobile devices */
+@media screen and (max-width: 700px) {
+    /* Nav styles */
+    nav{
+        padding: 1em;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-toggler{
+        display: flex;
+    }
+    .nav-links{
+       width: 100%;
+       display: none;
+    }
+    .nav-links ul{
+        margin-top: 1em;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links li{
+        text-align: center;
+    }
+    .nav-links a{
+        border-top: 1px solid whitesmoke;
+    }
+    .nav-links a:hover{
+        text-decoration: none;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    /* Home styles */
+        /* Intro styles */
+    .intro{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .author-info, .img-prompt{
+        width: 100%;
+    }
+    /* Wip styles */
+    .wip,  .scribbles{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .wip-image{
+        width: 100%;
+    }
+    .wip-description, .scribbles-details-links{
+        width: 100%;
+    }
+    .poemOTWeek{
+        width: 80%;
+    }
+
+    /* poem-component */
+    .poem-component{
+        padding:1em;
+    }
+    .poem-component .search{
+        width: 100%;
+    }
+    .poem-component .poem-map{
+        width: 100%;
+        grid-template-columns:  1fr;
+    }
+    
+    /* Create */
+    .create{
+        padding: .5em;
+    }
+    .create-form{
+        width: 100%;
+        margin-top: 0;
+        padding: 1em;
+    }
+    .create-form label{
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .social-icons + p{
+        font-weight: 300;
+    }
+}

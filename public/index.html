@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/images/Logosmall.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/Logosmall.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&amp;family=Lora:ital,wght@1,400;1,500;1,600&amp;family=Poppins:wght@100;200&amp;family=Red+Hat+Display:wght@300&amp;family=Roboto:wght@100&amp;family=Rubik:wght@300&amp;display=swap" rel="stylesheet">
+    <link
+      id="stylesheet"
+      rel="stylesheet"
+      href="light-theme.css"
+    />
+    <script src="https://use.fontawesome.com/c0c40614b8.js"></script>
+    <script src="%PUBLIC_URL%/theme.js"></script>
+    <title>Adeyemi Writes</title>
+  </head>
+  <body onload="myFunction()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="loading">
+      <div id="loader"></div>
+      <p>Loading... Please wait while we fetch your page</p>
+    </div>
+    <div id="root" class="animate-bottom"></div>
+    <script>
+      function myFunction(){
+        setTimeout(showPage, 1000)
+      }
+      function showPage() {
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("root").style.display = "block";
+}
+    </script>
+  </body>
+</html>
